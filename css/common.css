@@ -1,0 +1,132 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+p,
+input,
+select,
+option,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei';
+  font-weight: normal;
+}
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+input,
+button,
+select,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: none;
+  vertical-align: middle;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+em,
+i,
+u {
+  font-style: normal;
+}
+b,
+strong {
+  font-weight: normal;
+}
+@reset ();
+html {
+  font-size: 62.5%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: auto;
+  max-width: 960px;
+  overflow: hidden;
+  position: relative;
+}
+.mod {
+  position: absolute;
+  top: 2000px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.arr {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  margin-left: -15px;
+  background: url("../images/arrow.png") center center no-repeat;
+  width: 29px;
+  height: 24px;
+  animation: arr 1.5s linear infinite;
+}
+@-moz-keyframes arr {
+  0% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 16px;
+  }
+}
+@-webkit-keyframes arr {
+  0% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 16px;
+  }
+}
+@-o-keyframes arr {
+  0% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 16px;
+  }
+}
+@keyframes arr {
+  0% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 16px;
+  }
+}

@@ -1,0 +1,298 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+p,
+input,
+select,
+option,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei';
+  font-weight: normal;
+}
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+input,
+button,
+select,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+img {
+  border: none;
+  vertical-align: middle;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+em,
+i,
+u {
+  font-style: normal;
+}
+b,
+strong {
+  font-weight: normal;
+}
+@reset ();
+html {
+  font-size: 62.5%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: auto;
+  max-width: 960px;
+  overflow: hidden;
+  position: relative;
+}
+.mod {
+  position: absolute;
+  top: 2000px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.arr {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  margin-left: -15px;
+  background: url("../images/arrow.png") center center no-repeat;
+  width: 29px;
+  height: 24px;
+  animation: arr 1.5s linear infinite;
+}
+@-moz-keyframes arr {
+  0% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 16px;
+  }
+}
+@-webkit-keyframes arr {
+  0% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 16px;
+  }
+}
+@-o-keyframes arr {
+  0% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 16px;
+  }
+}
+@keyframes arr {
+  0% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 16px;
+  }
+}
+.qa {
+  background: #e7e7e7;
+}
+.qa .vline {
+  position: absolute;
+}
+.qa .vline:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #dcdcdc;
+}
+.qa .vline:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  width: 8px;
+  height: 100%;
+  background: #dcdcdc;
+}
+.qa .blink {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 28px;
+  height: 28px;
+  background: url("../images/icon01.png") center center no-repeat;
+  background-size: 100% 100%;
+  z-index: 999;
+}
+.qa .ctn {
+  position: relative;
+  left: 46px;
+  top: 42px;
+  height: 100%;
+  overflow: hidden;
+  width: calc(100% - 60px);
+  opacity: 0;
+}
+.qa .ctn p {
+  font-size: 0.2rem;
+  line-height: 1.4;
+  color: #3a5063;
+  margin-bottom: 0.4rem;
+}
+.qa .q {
+  top: 30px;
+}
+.qa .q h2 {
+  font-size: 0.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.qa .q p {
+  font-size: 0.3rem;
+  text-indent: 20px;
+  line-height: 2;
+}
+.qa .q p input {
+  margin-right: 10px;
+}
+.qa .q .checked {
+  position: relative;
+}
+.qa .q .checked:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -9px;
+  background: url("../images/icon02.png") no-repeat;
+  background-size: 18px 18px;
+}
+.qa .last:before {
+  content: "";
+  top: auto;
+  bottom: -30px;
+}
+.btn {
+  color: #fff;
+  font-size: 0.2rem;
+  background: url("../images/btn.png") no-repeat;
+  width: 192px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+}
+.result {
+  padding: 0 15px;
+  background: url("../images/bg02.png") no-repeat;
+}
+.result p {
+  color: #fff;
+  font-size: 0.3rem;
+}
+.result img {
+  width: 204px;
+  height: 120px;
+  margin: 2rem auto;
+  display: block;
+}
+.qrcode {
+  background: #e7e7e7;
+  padding: 0 15px;
+}
+.qrcode h2 {
+  font-size: 0.3em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.qrcode article {
+  margin-bottom: 0.3rem;
+}
+.qrcode p {
+  font-size: 0.2rem;
+}
+.qrcode .imgContainer {
+  width: 280px;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+}
+.qrcode img {
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+}
+.form {
+  background: #e7e7e7;
+  padding: 0 15px;
+}
+.form p {
+  font-size: 0.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.form p:nth-of-type(1) {
+  margin-top: 36px;
+}
+.form input {
+  display: block;
+  border: 1px solid #d6d6d6;
+  width: 80%;
+  height: 40px;
+  margin: 10px auto;
+}
+.form article {
+  background: #e7e7e7;
+}
+.form img {
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin-right: 10px;
+}
